@@ -27,7 +27,7 @@ parent(gosh,vasilisa).
 parent(katerina,iami).
 parent(katerina,oksana).
 parent(katerina,valera).
-parent(katerina,ira).
+parent(katerina,vasilisa).
 
 parent(iami,andrei).
 parent(iami,kirill).
