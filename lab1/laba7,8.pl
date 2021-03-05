@@ -66,5 +66,5 @@ b_s(X,Y):-parent(Z,X),parent(Z,Y),man(Z),not(X=Y),!.
 bs(X,Y):-parent(Z,X),parent(Z,Y),woman(Z),not(X=Y).
 b_s(X):-bs(Y,X),write(Y),write(", "),false.
 
-grand_pa(X,Y):-parent(Z,X),parent(Z,Y),man(X).
+grand_pa(X,Y):-parent(X,Z),parent(Z,Y),man(X)
 grand_pas(X):-man(Y),parent(Z,X),parent(Y,Z),write(Y).
