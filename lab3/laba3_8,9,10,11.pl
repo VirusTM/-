@@ -14,7 +14,6 @@ maxinodel3up(X,N):-X1 is X div 10, maxinodel3up(X1,N1),!,
     N2 is X mod 10, no3(N2,N3), max(N1,N3,N),!.
 no3(X,X):- X mod 3 =\= 0,!.
 no3(_,0):-!.
-
 maxinodel3down(0,Max,Max):-!.
 maxinodel3down(X,Max,N):-X1 is X div 10, N1 is X mod 10, no3(N1,N2),
     max(Max,N2,Max1), maxinodel3down(X1,Max1,N),!.
