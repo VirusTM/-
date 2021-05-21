@@ -59,13 +59,13 @@ div(X,PosX,N):-
     X mod PosX =:= 0, PosX2  is  PosX -1,div(X,PosX2,N2),N is N2 + 1;
     X mod PosX  =\= 0, PosX2 is PosX -1,div(X,PosX2,N2), N is N2.
 
-% Exc 13
+
 strangeIter(1,1):-!.
 strangeIter(X,N):-
     X mod 2 =:= 0, NewX is X div 2,strangeIter(NewX,NewN),N is NewN+1,!;
     X mod 2 =\= 0, NewX is X*3 + 1,strangeIter(NewX,NewN),N is NewN+1,!.
 
-% Exc 14
+
 countNotPrimeNODsUp(X,N):-countNPNODs(X,X,N),!.
 countNPNODs(_,1,0):-!.
 countNPNODs(X,Cur,N):-Cur mod 2 =:= 0,NewCur is Cur-1,countNPNODs(X,NewCur,NewN),
