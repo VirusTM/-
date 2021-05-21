@@ -311,7 +311,7 @@ preduct8:-tell('C:/Users/VirusTM/Documents/Prolog/lab9/conclusion.txt'),
   read_str(A, _),
   words_t8(A).
 
-ords_t9(_, Count, 7, Word) :-
+words_t9(_, Count, 7, Word) :-
   Count > 2,
   write_str(Word), nl, !, fail.
 words_t9(_, _, 7, _) :- !, fail.
